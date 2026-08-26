@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Contact RingerWorks | Software Development</title>
+
+    <meta name="description"
+          content="Contact RingerWorks about custom software development, application modernization, database work, integrations, troubleshooting, and technical consulting.">
+
+    <!-- Typography -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Site Styles -->
+    <link rel="stylesheet"
+          href="../assets/css/site.css">
+
+    <!--
+        Cloudflare Turnstile
+
+        This will provide bot/spam protection for the form.
+        Replace YOUR_TURNSTILE_SITE_KEY with the site key
+        Cloudflare gives us when we configure Turnstile.
+    -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+            async
+            defer></script>
+</head>
+
+
+<body>
+
+    <a class="skip-link"
+       href="#main-content">
+        Skip to content
+    </a>
+
+
+    <!-- =========================================================
+         HEADER
+         ========================================================= -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="../index.html"
+               class="brand"
+               aria-label="RingerWorks home">
+
+                <span class="brand-name">
+                    RingerWorks
+                </span>
+
+                <span class="brand-line"
+                      aria-hidden="true"></span>
+
+                <span class="brand-tagline">
+                    Creative thinking. Robust solutions.
+                </span>
+
+            </a>
+
+
+            <nav class="main-nav"
+                 aria-label="Main navigation">
+
+                <a href="../about/index.html">
+                    About
+                </a>
+
+                <a href="../contact/index.html"
+                   class="nav-current"
+                   aria-current="page">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main id="main-content">
+
+
+        <!-- =====================================================
+             CONTACT HERO
+             ===================================================== -->
+
+        <section class="contact-page-hero">
+
+            <div class="container contact-page-hero-grid">
+
+
+                <div class="contact-page-hero-copy">
+
+                    <p class="eyebrow">
+                        START A CONVERSATION
+                    </p>
+
+
+                    <h1>
+                        Tell me what you're<br>
+                        <span>trying to solve.</span>
+                    </h1>
+
+
+                    <p class="contact-page-hero-lead">
+                        You don't need a technical specification,
+                        architecture diagram, or even the exact solution.
+                    </p>
+
+
+                    <p class="contact-page-hero-description">
+                        Tell me what's happening now, what you'd like
+                        to change, or what you're hoping to build.
+                        We can figure out the technical part from there.
+                    </p>
+
+                </div>
+
+
+
+                <aside class="contact-next"
+                       aria-label="What happens after you contact RingerWorks">
+
+                    <p class="section-label">
+                        WHAT HAPPENS NEXT
+                    </p>
+
+
+                    <p>
+                        I personally review every inquiry.
+                    </p>
+
+
+                    <p>
+                        You'll receive an email right away confirming
+                        that your message reached me.
+                    </p>
+
+
+                    <p>
+                        I'll take a look at what you've sent and
+                        get back to you soon.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT FORM
+             ===================================================== -->
+
+        <section class="contact-form-section section">
+
+            <div class="container contact-form-layout">
+
+
+                <!-- LEFT COLUMN -->
+
+                <div class="contact-form-intro">
+
+                    <p class="section-label">
+                        YOUR PROJECT
+                    </p>
+
+
+                    <h2>
+                        A few details are
+                        enough to get started.
+                    </h2>
+
+
+                    <p>
+                        Don't worry about using technical language.
+                        I'm interested in understanding the problem
+                        before deciding what the solution should be.
+                    </p>
+
+                </div>
+
+
+
+                <!-- RIGHT COLUMN -->
+
+                <div class="contact-form-wrapper">
+
+                    <form id="contact-form"
+                          class="contact-form"
+                          action="/api/contact"
+                          method="post">
+
+
+                        <!-- -----------------------------------------
+                             NAME
+                             ----------------------------------------- -->
+
+                        <div class="form-field">
+
+                            <label for="name">
+                                Name
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   maxlength="100"
+                                   autocomplete="name"
+                                   required>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             EMAIL + PHONE
+                             ----------------------------------------- -->
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+
+                                <label for="email">
+                                    Email
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       maxlength="254"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="phone">
+                                    Phone
+                                    <span class="optional">
+                                        Optional
+                                    </span>
+                                </label>
+
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       maxlength="40"
+                                       autocomplete="tel">
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             COMPANY
+                             ----------------------------------------- -->
+
+                        <div class="form-field">
+
+                            <label for="company">
+                                Company or organization
+                                <span class="optional">
+                                    Optional
+                                </span>
+                            </label>
+
+                            <input type="text"
+                                   id="company"
+                                   name="company"
+                                   maxlength="150"
+                                   autocomplete="organization">
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             PROJECT TYPE
+                             ----------------------------------------- -->
+
+                        <div class="form-field">
+
+                            <label for="projectType">
+                                What kind of help are you looking for?
+                            </label>
+
+                            <select id="projectType"
+                                    name="projectType">
+
+                                <option value="">
+                                    Select one if you know
+                                </option>
+
+                                <option value="New application or feature">
+                                    New application or feature
+                                </option>
+
+                                <option value="Existing application or modernization">
+                                    Existing application or modernization
+                                </option>
+
+                                <option value="Database or SQL Server">
+                                    Database or SQL Server
+                                </option>
+
+                                <option value="API or system integration">
+                                    API or system integration
+                                </option>
+
+                                <option value="Troubleshooting or production issue">
+                                    Troubleshooting or production issue
+                                </option>
+
+                                <option value="Technical consulting">
+                                    Technical consulting
+                                </option>
+
+                                <option value="Not sure yet">
+                                    I'm not sure yet
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             DESCRIPTION
+                             ----------------------------------------- -->
+
+                        <div class="form-field">
+
+                            <label for="description">
+                                What are you trying to solve?
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <p class="field-help"
+                               id="description-help">
+
+                                Tell me what you need the software to do,
+                                what isn't working today, or what you'd
+                                like to improve. Plain English is perfect.
+
+                            </p>
+
+                            <textarea id="description"
+                                      name="description"
+                                      rows="8"
+                                      maxlength="5000"
+                                      aria-describedby="description-help"
+                                      required></textarea>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             HONEYPOT
+
+                             Humans won't see this field.
+                             Bots frequently fill it in.
+
+                             The server will reject submissions
+                             containing a value here.
+                             ----------------------------------------- -->
+
+                        <div class="form-honeypot"
+                             aria-hidden="true">
+
+                            <label for="website">
+                                Website
+                            </label>
+
+                            <input type="text"
+                                   id="website"
+                                   name="website"
+                                   tabindex="-1"
+                                   autocomplete="off">
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             CLOUDFLARE TURNSTILE
+                             ----------------------------------------- -->
+
+                        <div class="form-turnstile">
+
+                            <div class="cf-turnstile"
+                                 data-sitekey="0x4AAAAAAEcS2iURukJx3sfP"
+                                 data-theme="dark">
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             SUBMIT
+                             ----------------------------------------- -->
+
+                        <div class="form-submit">
+
+                            <button type="submit"
+                                    class="button button-primary"
+                                    id="contact-submit">
+
+                                Send My Message
+
+                            </button>
+
+
+                            <p class="form-privacy">
+                                Your information will only be used
+                                to respond to your inquiry.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- -----------------------------------------
+                             SUCCESS / ERROR MESSAGE
+                             ----------------------------------------- -->
+
+                        <div id="form-status"
+                             class="form-status"
+                             role="status"
+                             aria-live="polite">
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+
+                <span>
+                    RingerWorks
+                </span>
+
+                <small>
+                    Creative thinking. Robust solutions.
+                </small>
+
+            </div>
+
+
+            <nav class="footer-nav"
+                 aria-label="Footer navigation">
+
+                <a href="../about/index.html">
+                    About
+                </a>
+
+                <a href="../contact/index.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <p class="copyright">
+                &copy; 2026 RingerWorks
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         CONTACT FORM SUBMISSION
+         ========================================================= -->
+
+    <script>
+
+        const contactForm =
+            document.getElementById("contact-form");
+
+        const submitButton =
+            document.getElementById("contact-submit");
+
+        const formStatus =
+            document.getElementById("form-status");
+
+
+        contactForm.addEventListener(
+            "submit",
+            async function (event) {
+
+                event.preventDefault();
+
+                submitButton.disabled = true;
+                submitButton.textContent = "Sending...";
+
+                formStatus.textContent = "";
+                formStatus.className = "form-status";
+
+
+                try {
+
+                    const formData =
+                        new FormData(contactForm);
+
+
+                    const response =
+                        await fetch(
+                            contactForm.action,
+                            {
+                                method: "POST",
+
+                                body: formData,
+
+                                headers: {
+                                    "Accept": "application/json"
+                                }
+                            }
+                        );
+
+
+                    const result =
+                        await response.json();
+
+
+                    if (!response.ok) {
+
+                        throw new Error(
+                            result.message ||
+                            "Unable to send your message."
+                        );
+
+                    }
+
+
+                    formStatus.textContent =
+                        "Thanks — your message is on its way. " +
+                        "I've sent a confirmation to your email address.";
+
+                    formStatus.className =
+                        "form-status form-status-success";
+
+
+                    contactForm.reset();
+
+
+                    /*
+                        Reset Turnstile after a
+                        successful submission.
+                    */
+
+                    if (
+                        typeof turnstile !== "undefined"
+                    ) {
+
+                        turnstile.reset();
+
+                    }
+
+                }
+                catch (error) {
+
+                    formStatus.textContent =
+                        "Something went wrong while sending your message. " +
+                        "Please try again.";
+
+                    formStatus.className =
+                        "form-status form-status-error";
+
+                }
+                finally {
+
+                    submitButton.disabled = false;
+
+                    submitButton.textContent =
+                        "Send My Message";
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
