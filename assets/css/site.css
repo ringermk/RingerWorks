@@ -1273,6 +1273,9 @@ select:focus-visible {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .capability-grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     /* PROBLEM SECTION */
 
@@ -1442,6 +1445,9 @@ select:focus-visible {
 
     .capability-grid {
         grid-template-columns: 1fr;
+    }
+    .capability-grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 
@@ -2028,3 +2034,34 @@ select:focus-visible {
         gap: 16px;
     }
 }
+
+.contact-direct {
+    margin-top: 42px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+
+    .contact-direct span {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text-muted);
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+
+    .contact-direct a {
+        color: var(--text);
+        font-family: var(--font-heading);
+        font-size: 1.05rem;
+        text-decoration: none;
+    }
+
+
+        .contact-direct a:hover,
+        .contact-direct a:focus-visible {
+            color: var(--accent-hover);
+        }
