@@ -179,17 +179,24 @@
                 .map(item => {
 
                     return `
-                        <a href="${siteUrl(item.path)}">
-                            ${item.label}
-                        </a>
-                    `;
+                    <a href="${siteUrl(item.path)}">
+                        ${item.label}
+                    </a>
+                `;
 
                 })
                 .join("");
 
 
+        const privacyLink = `
+        <a href="${siteUrl("privacy/index.html")}">
+            Privacy
+        </a>
+    `;
+
+
         return `
-            <footer class="site-footer">
+        <footer class="site-footer">
 
                 <div class="container footer-inner">
 
@@ -210,6 +217,7 @@
                          aria-label="Footer navigation">
 
                         ${footerNavigation}
+                        ${privacyLink}
 
                     </nav>
 

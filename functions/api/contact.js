@@ -96,11 +96,15 @@ export async function onRequestPost(context) {
         const turnstileResult =
             await turnstileResponse.json();
 
+        const ALLOWED_HOSTNAMES = new Set([
+            "ringerworks.com",
+            "www.ringerworks.com"
+        ]);
+
 
         if (
             !turnstileResult.success ||
-            turnstileResult.hostname !==
-            "ringerworks.com"
+            !ALLOWED_HOSTNAMES.has(turnstileResult.hostname)
         ) {
 
             console.error(
