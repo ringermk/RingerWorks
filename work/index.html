@@ -44,8 +44,8 @@
 
 
         <!-- =====================================================
-             WORK HERO
-             ===================================================== -->
+         WORK HERO
+         ===================================================== -->
 
         <section class="work-hero">
 
@@ -74,8 +74,11 @@
 
 
         <!-- =====================================================
-             PROJECTS
-             ===================================================== -->
+         PROJECTS
+         ===================================================== -->
+        <!-- =====================================================
+    REPRESENTATIVE WORK
+    ===================================================== -->
 
         <section class="work-projects section">
 
@@ -89,36 +92,36 @@
                             REPRESENTATIVE WORK
                         </p>
 
-
                         <h2>
-                            Real problems.<br>
-                            Practical solutions.
+                            Real systems.<br>
+                            Real problems.
                         </h2>
 
                     </div>
 
-
                     <p>
-                        Some client and system details are intentionally
-                        generalized, but the work described here is real.
+                        A few examples of software I've built, modernized,
+                        and helped untangle. Some organizational and system
+                        details are intentionally generalized.
                     </p>
 
                 </div>
 
 
 
-                <div class="project-list">
+                <div class="case-study-list">
 
 
-                    <!-- =========================================
-                         PROJECT 1
-                         ========================================= -->
+                    <!-- =================================================
+                     CASE STUDY 1
+                     MANAGED CARE MODERNIZATION
+                     ================================================= -->
 
-                    <article class="project-case">
+                    <article class="case-study">
 
-                        <div class="project-meta">
+                        <aside class="case-study-meta">
 
-                            <span>
+                            <span class="case-study-type">
                                 LEGACY MODERNIZATION
                             </span>
 
@@ -126,61 +129,187 @@
                                 HEALTHCARE
                             </span>
 
-                        </div>
+                            <span>
+                                6-MONTH PROJECT
+                            </span>
+
+                        </aside>
 
 
-                        <div class="project-content">
+                        <div class="case-study-content">
 
-                            <h3>
-                                Modernizing a business-critical
-                                legacy application.
-                            </h3>
+                            <header class="case-study-header">
+
+                                <h3>
+                                    Rebuilding a system whose documentation
+                                    was buried in ten-year-old emails.
+                                </h3>
+
+                                <p class="case-study-lead">
+                                    Revenue Management relied on an aging Classic ASP
+                                    application to track managed-care financial activity —
+                                    including patient accounts, insurance information,
+                                    write-offs, reconciliations, and reporting for
+                                    Administration.
+                                </p>
+
+                            </header>
 
 
-                            <div class="project-detail">
+
+                            <div class="case-study-section">
 
                                 <h4>
-                                    The situation
+                                    Understanding the system
                                 </h4>
 
-                                <p>
-                                    An established internal application had become
-                                    increasingly difficult to maintain as technology
-                                    and business requirements evolved.
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        The application had been in place for years with
+                                        very little documentation, so replacing it started
+                                        with figuring out what it actually did.
+                                    </p>
+
+                                    <p>
+                                        I worked directly with its primary user to understand
+                                        how she used the system, what information mattered,
+                                        and which parts of the existing workflow needed
+                                        to remain.
+                                    </p>
+
+                                    <p>
+                                        Some of the business rules weren't documented
+                                        anywhere. At one point, answering questions about
+                                        how data reached the application meant tracking
+                                        down emails that were more than ten years old.
+                                    </p>
+
+                                </div>
 
                             </div>
 
 
-                            <div class="project-detail">
+
+                            <div class="case-study-section">
 
                                 <h4>
-                                    What I did
+                                    Building the replacement
                                 </h4>
 
-                                <p>
-                                    Worked within the existing system to modernize
-                                    application components, improve maintainability,
-                                    and move functionality toward current .NET
-                                    development practices without requiring an
-                                    unnecessary ground-up rewrite.
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        I designed and developed a modern replacement using
+                                        a Blazor user interface, a Web API between the
+                                        application and data layers, Entity Framework,
+                                        SQL Server, and Microsoft Entra ID authentication.
+                                    </p>
+
+                                    <p>
+                                        I used Balsamiq to work through screens and workflows
+                                        before development, then built the new application
+                                        around the way Revenue Management actually worked
+                                        rather than simply reproducing the old interface.
+                                    </p>
+
+                                    <p>
+                                        When a user entered a patient account number, the
+                                        application could retrieve existing patient and
+                                        insurance information from another hospital system
+                                        rather than requiring Accounting to enter information
+                                        the organization already had.
+                                    </p>
+
+                                </div>
 
                             </div>
 
 
-                            <div class="project-detail">
+
+                            <div class="case-study-section">
 
                                 <h4>
-                                    Technology
+                                    Working with legacy constraints
                                 </h4>
 
-                                <p>
-                                    C# · .NET · SQL Server · REST APIs ·
-                                    Authentication · IIS
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        We intentionally reused the existing database even
+                                        though parts of the schema were far from ideal —
+                                        including tables without primary keys.
+                                    </p>
+
+                                    <p>
+                                        A new database would have been cleaner, but the
+                                        existing one could also have been supporting SSRS
+                                        reports and other dependencies that weren't fully
+                                        documented. Replacing it without knowing everything
+                                        that depended on it would have introduced
+                                        unnecessary risk.
+                                    </p>
+
+                                    <p class="case-study-emphasis">
+                                        Sometimes modernization means knowing what
+                                        not to replace.
+                                    </p>
+
+                                </div>
 
                             </div>
+
+
+
+                            <div class="case-study-section">
+
+                                <h4>
+                                    Where it landed
+                                </h4>
+
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        By the end of the six-month engagement, the
+                                        replacement application was substantially complete.
+                                        The remaining work depended on an organization-level
+                                        solution for securely moving data between servers,
+                                        which was ultimately assigned a lower priority before
+                                        my contract ended.
+                                    </p>
+
+                                    <p>
+                                        Development was managed through user stories, Git,
+                                        pull requests, code reviews, and weekly sprint
+                                        meetings with the project manager, technical leads,
+                                        and system analyst.
+                                    </p>
+
+                                    <p>
+                                        I also began documenting the replacement system as
+                                        it was built — something the application it replaced
+                                        had largely been missing.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <footer class="case-study-technology">
+
+                                <span>
+                                    TECHNOLOGY
+                                </span>
+
+                                <p>
+                                    C# · .NET 9 · Blazor · Web API · Entity Framework ·
+                                    SQL Server · SQL CLR · Microsoft Entra ID · Git ·
+                                    Pull Requests · Balsamiq
+                                </p>
+
+                            </footer>
 
                         </div>
 
@@ -188,76 +317,341 @@
 
 
 
-                    <!-- =========================================
-                         PROJECT 2
-                         ========================================= -->
 
-                    <article class="project-case">
+                    <!-- =================================================
+                     CASE STUDY 2
+                     LABORATORY INFORMATION MANAGEMENT SYSTEM
+                     ================================================= -->
 
-                        <div class="project-meta">
+                    <article class="case-study">
 
-                            <span>
-                                DATA + INTEGRATION
+                        <aside class="case-study-meta">
+
+                            <span class="case-study-type">
+                                APPLICATION DEVELOPMENT
                             </span>
 
                             <span>
-                                REGULATED WORKFLOW
+                                DIAGNOSTICS
                             </span>
+
+                            <span>
+                                2-YEAR BUILD
+                            </span>
+
+                        </aside>
+
+
+                        <div class="case-study-content">
+
+                            <header class="case-study-header">
+
+                                <h3>
+                                    Building the system that ran
+                                    the laboratory.
+                                </h3>
+
+                                <p class="case-study-lead">
+                                    A diagnostic laboratory needed to replace an existing
+                                    Laboratory Information Management System that no longer
+                                    supported everything the organization needed it to do.
+                                </p>
+
+                            </header>
+
+
+
+                            <div class="case-study-section">
+
+                                <h4>
+                                    From arrival to result
+                                </h4>
+
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        Over roughly two years, I worked as one of three
+                                        peer developers designing and building a replacement
+                                        LIMS from the ground up. I was responsible for a
+                                        substantial portion of the application.
+                                    </p>
+
+                                    <p>
+                                        The system tracked patients, physicians, requisitions,
+                                        specimens, ordered tests, assay results, billing,
+                                        shipping, and the questions or problems that could
+                                        arise anywhere along the way.
+                                    </p>
+
+                                    <p>
+                                        When a specimen arrived, its requisition was scanned
+                                        and the sample entered the laboratory workflow.
+                                        Staff recorded patient and physician information,
+                                        ordered tests, shipment problems, and other issues.
+                                        As testing progressed, assay results were imported
+                                        into the system and the appropriate departments
+                                        completed their work and signed off.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="case-study-section">
+
+                                <h4>
+                                    Building for real users
+                                </h4>
+
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        The three developers worked directly with laboratory
+                                        staff and Administration rather than designing the
+                                        system in isolation.
+                                    </p>
+
+                                    <p>
+                                        I continued listening to users after launch and
+                                        improving the application based on how they actually
+                                        worked. One example was a more robust search feature
+                                        for finding specimens and physicians.
+                                    </p>
+
+                                    <p>
+                                        A later performance evaluation specifically noted
+                                        that the search functionality saved users time and
+                                        significantly increased user buy-in.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="case-study-section">
+
+                                <h4>
+                                    Protecting the record
+                                </h4>
+
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        The application handled protected health information,
+                                        so accountability was built into the system.
+                                    </p>
+
+                                    <p>
+                                        Changes could be traced to the user who made them
+                                        and the time they were made, creating an audit
+                                        history around records and workflow activity.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="case-study-section case-study-result">
+
+                                <h4>
+                                    The result
+                                </h4>
+
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        The LIMS went into production and became the
+                                        laboratory's primary operational system.
+                                    </p>
+
+                                    <p>
+                                        It remained in active use throughout the remaining
+                                        three years I worked there, while we continued
+                                        maintaining it and adding new capabilities.
+                                    </p>
+
+                                    <p class="case-study-emphasis">
+                                        This wasn't a prototype or a portfolio exercise.
+                                        People did their jobs in it every day.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <footer class="case-study-technology">
+
+                                <span>
+                                    TECHNOLOGY
+                                </span>
+
+                                <p>
+                                    C# · .NET · WinForms · SQL Server · Stored Procedures ·
+                                    SQL Jobs · SSRS · APIs · IIS · TFS · Active Directory
+                                </p>
+
+                            </footer>
 
                         </div>
 
-
-                        <div class="project-content">
-
-                            <h3>
-                                Supporting complex workflows
-                                across applications and data.
-                            </h3>
+                    </article>
 
 
-                            <div class="project-detail">
+
+
+                    <!-- =================================================
+                     CASE STUDY 3
+                     PAPERLESS WORKFLOW
+                     ================================================= -->
+
+                    <article class="case-study">
+
+                        <aside class="case-study-meta">
+
+                            <span class="case-study-type">
+                                WORKFLOW AUTOMATION
+                            </span>
+
+                            <span>
+                                HEALTHCARE
+                            </span>
+
+                            <span>
+                                REMOTE OPERATIONS
+                            </span>
+
+                        </aside>
+
+
+                        <div class="case-study-content">
+
+                            <header class="case-study-header">
+
+                                <h3>
+                                    When the paper had to stop moving,
+                                    the work still had to.
+                                </h3>
+
+                                <p class="case-study-lead">
+                                    Before the pandemic, an important laboratory workflow
+                                    depended on a physical requisition being passed from
+                                    department to department in batches.
+                                </p>
+
+                            </header>
+
+
+
+                            <div class="case-study-section">
 
                                 <h4>
-                                    The situation
+                                    The problem
                                 </h4>
 
-                                <p>
-                                    Business workflows depended on multiple
-                                    systems, databases, and integrations working
-                                    reliably together.
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        Each department reviewed the requisition, handled
+                                        its portion of the process, signed off, and passed
+                                        the paper along.
+                                    </p>
+
+                                    <p>
+                                        It was slow, difficult to track, and depended on
+                                        employees being physically present in the building.
+                                    </p>
+
+                                    <p>
+                                        When COVID sent employees home, that limitation
+                                        became considerably more important.
+                                    </p>
+
+                                </div>
 
                             </div>
 
 
-                            <div class="project-detail">
+
+                            <div class="case-study-section">
 
                                 <h4>
-                                    What I did
+                                    Moving the workflow into LIMS
                                 </h4>
 
-                                <p>
-                                    Developed and supported application logic,
-                                    database functionality, APIs, integrations,
-                                    and production workflows while troubleshooting
-                                    issues across system boundaries.
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        I completed a paperless workflow inside the LIMS
+                                        so scanned requisitions could move electronically
+                                        through the organization.
+                                    </p>
+
+                                    <p>
+                                        Each requisition PDF was associated with a unique
+                                        identifier. Employees could review it and sign off
+                                        digitally, while the system recorded the employee,
+                                        department, date and time, status or reason, and
+                                        related notes.
+                                    </p>
+
+                                    <p>
+                                        Users could see not only who had already completed
+                                        their work, but which departments were still waiting
+                                        to take action.
+                                    </p>
+
+                                </div>
 
                             </div>
 
 
-                            <div class="project-detail">
+
+                            <div class="case-study-section case-study-result">
 
                                 <h4>
-                                    Technology
+                                    The result
                                 </h4>
 
-                                <p>
-                                    C# · .NET · SQL Server · T-SQL ·
-                                    APIs · Systems Integration
-                                </p>
+                                <div class="case-study-copy">
+
+                                    <p>
+                                        The paperless system allowed approximately
+                                        <strong>55% of employees to work from home</strong>
+                                        during the pandemic.
+                                    </p>
+
+                                    <p>
+                                        It also outlived the emergency that prompted the
+                                        work. The organization continued using the workflow
+                                        as many positions transitioned to hybrid work.
+                                    </p>
+
+                                </div>
 
                             </div>
+
+
+
+                            <footer class="case-study-technology">
+
+                                <span>
+                                    TECHNOLOGY
+                                </span>
+
+                                <p>
+                                    C# · .NET · WinForms · SQL Server ·
+                                    Digital Workflow · Audit Tracking
+                                </p>
+
+                            </footer>
 
                         </div>
 
@@ -265,6 +659,138 @@
 
 
                 </div>
+
+
+
+                <!-- =====================================================
+                 ADDITIONAL WORK
+                 ===================================================== -->
+
+                <section class="additional-work">
+
+                    <div class="additional-work-heading">
+
+                        <p class="section-label">
+                            ADDITIONAL WORK
+                        </p>
+
+                        <h3>
+                            Not every useful project needs
+                            a two-year development cycle.
+                        </h3>
+
+                    </div>
+
+
+                    <div class="additional-work-grid">
+
+
+                        <!-- SECURITY MANAGER -->
+
+                        <article class="additional-work-card">
+
+                            <p class="additional-work-type">
+                                APPLICATION SECURITY
+                            </p>
+
+                            <h4>
+                                A security manager with control-level permissions.
+                            </h4>
+
+                            <p>
+                                Designed and built a C# WinForms application that
+                                integrated with Azure Active Directory and a SQL Server
+                                permissions database I designed.
+                            </p>
+
+                            <p>
+                                Administrators could search for an employee, see
+                                permissions inherited through organizational groups,
+                                understand where those permissions came from, and
+                                override them individually when necessary.
+                            </p>
+
+                            <p>
+                                Permissions could then be associated with individual
+                                pages, buttons, dropdowns, and other controls inside
+                                internal applications.
+                            </p>
+
+                            <footer>
+                                C# · WinForms · SQL Server · Azure Active Directory
+                            </footer>
+
+                        </article>
+
+
+
+                        <!-- SHAREPOINT -->
+
+                        <article class="additional-work-card">
+
+                            <p class="additional-work-type">
+                                SHAREPOINT + OFFICE 365
+                            </p>
+
+                            <h4>
+                                Building the company's first intranet.
+                            </h4>
+
+                            <p>
+                                Built a SharePoint Online intranet from scratch,
+                                including the company home page, announcements,
+                                employee directory, departmental sites, document
+                                libraries, calendars, forms, and knowledge bases.
+                            </p>
+
+                            <p>
+                                The new Document Center replaced an existing
+                                third-party service and was projected to save
+                                approximately <strong>$10,000 per year.</strong>
+                            </p>
+
+                            <footer>
+                                SharePoint Online · Office 365 · Information Architecture
+                            </footer>
+
+                        </article>
+
+
+
+                        <!-- PHYSICIAN KITS -->
+
+                        <article class="additional-work-card">
+
+                            <p class="additional-work-type">
+                                WORKFLOW + SHIPPING
+                            </p>
+
+                            <h4>
+                                Bringing physician kit ordering into LIMS.
+                            </h4>
+
+                            <p>
+                                Extended the LIMS so staff could order physician
+                                test kits directly from the application and associate
+                                custom requisition documents with physician accounts.
+                            </p>
+
+                            <p>
+                                FedEx and ShipStation tracking information was
+                                automatically populated for physician kits,
+                                reducing manual work for Shipping.
+                            </p>
+
+                            <footer>
+                                C# · SQL Server · LIMS · Shipping Integration
+                            </footer>
+
+                        </article>
+
+
+                    </div>
+
+                </section>
 
             </div>
 
@@ -273,8 +799,8 @@
 
 
         <!-- =====================================================
-             REFERENCES
-             ===================================================== -->
+         REFERENCES
+         ===================================================== -->
 
         <section class="references section">
 
@@ -311,8 +837,8 @@
 
 
                     <!-- =========================================
-                         MEREDITH BUSHATZ
-                         ========================================= -->
+                     MEREDITH BUSHATZ
+                     ========================================= -->
 
                     <blockquote class="reference-card">
 
@@ -343,8 +869,8 @@
 
 
                     <!-- =========================================
-                         REFERENCE 2
-                         ========================================= -->
+                     REFERENCE 2
+                     ========================================= -->
 
                     <blockquote class="reference-card reference-placeholder">
 
@@ -370,30 +896,29 @@
 
 
                     <!-- =========================================
-                         REFERENCE 3
-                         ========================================= -->
-
+                     REFERENCE 3
+                     ========================================= -->
                     <!--<blockquote class="reference-card reference-placeholder">
 
-                        <p>
-                            “Additional professional reference
-                            coming soon.”
-                        </p>
+                    <p>
+                        “Additional professional reference
+                        coming soon.”
+                    </p>
 
 
-                        <footer>
+                    <footer>
 
-                            <strong>
-                                Reference Name
-                            </strong>
+                        <strong>
+                            Reference Name
+                        </strong>
 
-                            <span>
-                                Title · Organization
-                            </span>
+                        <span>
+                            Title · Organization
+                        </span>
 
-                        </footer>
+                    </footer>
 
-                    </blockquote>-->
+                </blockquote>-->
 
 
                 </div>
@@ -405,8 +930,8 @@
 
 
         <!-- =====================================================
-             CONTACT CTA
-             ===================================================== -->
+         CONTACT CTA
+         ===================================================== -->
 
         <section class="contact-cta">
 
