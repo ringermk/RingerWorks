@@ -133,17 +133,9 @@
                        class="brand"
                        aria-label="RingerWorks home">
 
-                        <span class="brand-name">
-                            RingerWorks
-                        </span>
-
-                        <span class="brand-line"
-                              aria-hidden="true">
-                        </span>
-
-                        <span class="brand-tagline">
-                            Creative thinking. Robust solutions.
-                        </span>
+                        <img src="${siteUrl("assets/images/branding/ringerworks-horizontal-compact-light.png")}"
+     alt="RingerWorks"
+     class="brand-logo">
 
                     </a>
 
@@ -202,15 +194,20 @@
 
                     <div class="footer-brand">
 
-                        <span>
-                            RingerWorks
-                        </span>
+    <a href="${siteUrl("index.html")}"
+       aria-label="RingerWorks home">
 
-                        <small>
-                            Creative thinking. Robust solutions.
-                        </small>
+        <img src="${siteUrl("assets/images/branding/ringerworks-horizontal-compact-light.png")}"
+             alt="RingerWorks - Creative thinking. Robust solutions."
+             class="footer-logo">
 
-                    </div>
+                 <p class="footer-tagline">
+        Creative thinking. Robust solutions.
+    </p>
+
+    </a>
+
+</div>
 
 
                     <nav class="footer-nav"
